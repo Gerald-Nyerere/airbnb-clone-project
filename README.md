@@ -37,3 +37,21 @@ The backend for the Airbnb Clone project is designed to provide a robust and sca
 ### 7. Project Manager
 - Coordinates the team, manages timelines, assigns tasks, and ensures the project meets deadlines and requirements.
 - Acts as the main communication link between stakeholders and developers.
+
+## Technology Stack
+### 1. Django
+- A high-level Python web framework used for building the RESTful API.
+### 2. Django REST Framework 
+- Provides tools for creating and managing RESTful APIs.
+### 3. PostgreSQL 
+- A powerful relational database used for data storage.
+### 4. GraphQL 
+- Allows for flexible and efficient querying of data.
+### 5. Celery 
+- For handling asynchronous tasks such as sending notifications or processing payments.
+### 6. Redis 
+Used for caching and session management.
+### 7. Docker
+- Containerization tool for consistent development and deployment environments.
+### 8. CI/CD Pipelines
+- Automated pipelines for testing and deploying code changes.
