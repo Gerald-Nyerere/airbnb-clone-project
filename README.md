@@ -55,3 +55,41 @@ Used for caching and session management.
 - Containerization tool for consistent development and deployment environments.
 ### 8. CI/CD Pipelines
 - Automated pipelines for testing and deploying code changes.
+
+## Database Design
+
+### 1. Users
+- `id` (Primary Key)
+- `name`: Full name of the user.
+- `email`: Contact email, unique for each user.
+- `password`: Encrypted password for authentication.
+- `role`: Defines whether the user is a host or a guest.
+
+### 2. Properties
+- `id` (Primary Key).
+- `title`: Name or title of the property.
+- `description`: Detailed description of the property.
+- `price_per_night`: Cost per night for booking.
+- `owner_id` (Foreign Key): References the `Users` table
+
+### 3. Bookings
+- `id` (Primary Key): 
+- `property_id` (Foreign Key): References the `Properties` table.
+- `user_id` (Foreign Key): References the `Users` table
+- `start_date`: Start date of the booking.
+- `end_date`: End date of the booking.
+- `status` (pending, confirmed, canceled).
+
+### 4. Reviews
+- `id` (Primary Key)
+- `property_id` (Foreign Key): References the `Properties` table.
+- `user_id` (Foreign Key) References the `Users` table 
+- `rating` (e.g., 1–5).
+- `comment`: Text feedback from the guest.
+
+### 5. Payments
+- `id` (Primary Key )
+- `booking_id` (Foreign Key): References the `Bookings` table.
+- `amount`: Payment amount for the booking.
+- `payment_date`: Date of payment.
+- `status`: (e.g., completed, pending).
