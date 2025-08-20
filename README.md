@@ -123,3 +123,34 @@ Used for caching and session management.
 ### 7. Continuous Integration and Deployment (CI/CD)
 - Automates code testing, building, and deployment using GitHub Actions.
 - Ensures continuous integration of new features while minimizing errors.
+
+## API Security
+
+Ensuring the security of the AirBnB Clone API is a top priority to protect user data, maintain system integrity, and provide a secure booking experience. The following key security measures will be implemented:
+
+### 1. Authentication
+- All users will be required to authenticate using secure methods such as token-based authentication (JWT). 
+- This prevents unauthorized access to user accounts and sensitive data.
+- This ensures that only legitimate users can access their accounts and prevents identity theft.
+
+### 2. Authorization
+- Role-based access control will be used to manage permissions for different user roles (e.g., admin, host, guest).
+- This ensures users can only access features they are authorized to use.
+- This prevents unauthorized actions such as non-admin users accessing administrative controls.
+
+### 3. Rate Limiting
+- ImplementS rate limiting to prevent abuse through excessive requests.
+- This protects the system from overload and malicious attempts that could compromise service availability.
+
+### 4. Data Encryption
+- Sensitive data, including passwords and payment details, will be encrypted both at rest and in transit using SSL/TLS.
+- This protects user information from being intercepted or exposed during communication or storage.
+
+### 5. Input Validation
+- All inputs will be validated and sanitized to prevent common vulnerabilities such as SQL Injection and XSS attacks.
+- Ensures system stability and prevents malicious code execution or database compromise.
+
+### 6. Secure Payments
+- Payment transactions will be handled through trusted third-party gateways with proper PCI DSS compliance.
+- Protect financial information and maintain user trust.
+
