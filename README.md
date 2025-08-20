@@ -93,3 +93,33 @@ Used for caching and session management.
 - `amount`: Payment amount for the booking.
 - `payment_date`: Date of payment.
 - `status`: (e.g., completed, pending).
+
+## Feature Breakdown
+
+### 1. User Management
+- Handles user registration, authentication, and profile management. 
+- Ensures users can securely sign up, log in, and manage their personal information, enabling personalized experiences.
+
+### 2. Property Management
+- Allows hosts to add, update, and manage property listings. 
+- Includes property details, images, and pricing, forming the core of the AirBnB-like experience.
+
+### 3. Booking System
+- Enables guests to browse available properties, make reservations, and manage bookings.
+- Ensures a smooth and efficient process for securing stays and handling availability.
+
+### 4. Search and Filter
+- Provides users with advanced search capabilities based on location, price range, and amenities. 
+- Improves user experience by making it easier to find suitable properties quickly.
+
+### 5. Reviews and Ratings
+- Allows guests to leave feedback and ratings for properties. 
+- Adds trust and transparency, helping future guests make informed decisions.
+
+### 6. Payment Integration
+- Facilitates secure payment transactions between guests and hosts. 
+- It ensures a seamless booking experience by integrating reliable payment gateways.
+
+### 7. Continuous Integration and Deployment (CI/CD)
+- Automates code testing, building, and deployment using GitHub Actions.
+- Ensures continuous integration of new features while minimizing errors.
