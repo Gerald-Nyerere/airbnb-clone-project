@@ -171,4 +171,11 @@ A CI/CD (Continuous Integration and Continuous Deployment) pipeline automates th
 - **Deployment Platforms:** Can include cloud providers (AWS, GCP or Heroku) for hosting the application.
 - **Testing Frameworks:** Integrated into CI to validate code functionality (e.g., Django testing tools, Pytest)
 
+
+### Tools for CI/CD
+- **GitHub Actions:** Automates build, test, and deployment workflows directly within GitHub.
+- **Docker:** Ensures the application runs in consistent environments during development and production.
+- **Nginx & Gunicorn:** Used for production-ready deployments.
+- **Cloud Platforms (AWS/DigitalOcean):** For hosting and scaling the application.
+
 By implementing a CI/CD pipeline, the Airbnb Clone Project ensures efficient, reliable, and scalable software delivery that aligns with industry best practices.
